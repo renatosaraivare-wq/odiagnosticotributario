@@ -204,7 +204,7 @@ p{margin:0;}
 .comparativo-item{display:flex;align-items:flex-start;gap:13px;padding:14px 0;border-bottom:1px solid var(--papel-borda);}
 .comparativo-item:last-child{border-bottom:none;}
 .comparativo-item__icone{flex:none;width:34px;height:34px;border-radius:50%;background:var(--marfim-escuro);display:flex;align-items:center;justify-content:center;}
-.comparativo-item__icone .ic{color:var(--dourado-escuro);}
+.comparativo-item__icone .ic{color:var(--dourado-escuro);width:16px;height:16px;}
 .comparativo-item__texto{font-size:13.5px;color:var(--grafite);line-height:1.6;}
 .comparativo-item__destaque{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:0.08em;color:var(--dourado-escuro);margin-top:4px;}
 
@@ -222,7 +222,7 @@ p{margin:0;}
    ========================================================= */
 .bloco-ancoragem-valor{background:linear-gradient(135deg,var(--azul-meianoite) 0%,#1a2540 100%);border:1px solid var(--azul-aco);border-radius:var(--radius-doc);padding:22px 24px;margin:6px 0;}
 .bloco-ancoragem-valor__titulo{display:flex;align-items:center;gap:9px;font-family:var(--mono);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--dourado-claro);margin-bottom:14px;}
-.bloco-ancoragem-valor__titulo .ic{color:var(--dourado);}
+.bloco-ancoragem-valor__titulo .ic{color:var(--dourado);width:15px;height:15px;}
 .bloco-ancoragem-valor p{font-size:13.5px;color:#C9D2E0;line-height:1.7;}
 .bloco-ancoragem-valor strong{color:#E8DDB5;}
 
@@ -247,7 +247,7 @@ p{margin:0;}
 .pec-bloco{padding:16px 0;border-bottom:1px solid var(--papel-borda);}
 .pec-bloco:last-child{border-bottom:none;}
 .pec-bloco__titulo{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--azul-marinho);margin-bottom:10px;}
-.pec-bloco__titulo .ic{color:var(--dourado-escuro);}
+.pec-bloco__titulo .ic{color:var(--dourado-escuro);width:14px;height:14px;}
 .pec-texto{font-size:13.5px;color:var(--grafite);line-height:1.65;}
 .pec-risco{display:flex;align-items:center;gap:8px;font-size:13.5px;color:var(--grafite);margin-bottom:7px;}
 .pec-op{display:flex;align-items:center;gap:8px;font-size:13.5px;color:var(--grafite);margin-bottom:7px;}
@@ -266,6 +266,7 @@ p{margin:0;}
    ========================================================= */
 .mapa-riscos{background:#fff;border:1px solid var(--papel-borda);border-radius:var(--radius-doc);padding:22px;margin-bottom:6px;}
 .mapa-riscos__titulo{display:flex;align-items:center;gap:9px;font-family:var(--mono);font-size:11.5px;letter-spacing:0.12em;text-transform:uppercase;color:var(--azul-marinho);margin-bottom:16px;}
+.mapa-riscos__titulo .ic{width:15px;height:15px;}
 .mapa-riscos__tabela{width:100%;border-collapse:collapse;font-size:14px;}
 .mapa-riscos__tabela th{text-align:left;font-family:var(--mono);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--cinza-doc);padding:0 0 10px;border-bottom:1px solid var(--marfim-escuro);}
 .mapa-riscos__tabela td{padding:11px 0;border-bottom:1px solid var(--marfim-escuro);color:var(--grafite);}
@@ -276,7 +277,7 @@ p{margin:0;}
    ETAPA 9 — FORMULÁRIO EM ETAPAS PROGRESSIVAS
    ========================================================= */
 .form-etapa{animation:surgir 0.35s ease both;}
-.form-etapa__titulo{font-family:var(--mono);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--dourado-escuro);margin-bottom:16px;padding:8px 12px;background:rgba(201,162,74,0.08);border-radius:var(--radius-doc);border-left:3px solid var(--dourado);}
+.form-etapa__titulo{display:flex;align-items:center;gap:7px;font-family:var(--mono);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--dourado-escuro);margin-bottom:16px;padding:8px 12px;background:rgba(201,162,74,0.08);border-radius:var(--radius-doc);border-left:3px solid var(--dourado);}
 
 /* =========================================================
    ETAPA 16 — BOTÃO PDF PREMIUM
@@ -286,6 +287,7 @@ p{margin:0;}
 .btn-pdf-premium:active{transform:translateY(0);}
 .btn-pdf-premium .ic{color:var(--dourado);}
 .btn-pdf-premium:disabled{opacity:0.6;cursor:wait;}
+@media (prefers-reduced-motion: reduce){
   *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
 }
 
@@ -336,7 +338,7 @@ p{margin:0;}
 
 .barra-confianca{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--azul-aco);border:1px solid var(--azul-aco);border-radius:var(--radius-doc);overflow:hidden;margin-bottom:28px;}
 .item-confianca{background:var(--azul-meianoite);padding:14px 12px;display:flex;flex-direction:column;align-items:flex-start;gap:8px;}
-.item-confianca .ic{color:var(--dourado);}
+.item-confianca .ic{color:var(--dourado);width:18px;height:18px;}
 .item-confianca span{font-size:11.5px;color:#C9D2E0;line-height:1.35;}
 
 .capa__rotulo{font-family:var(--mono);font-size:11.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--dourado-claro);margin-bottom:14px;}
@@ -471,8 +473,8 @@ p{margin:0;}
 .divisor-doc{border:none;border-top:1px dashed var(--papel-borda);margin:28px 0;}
 
 .bloco-secao{margin-bottom:6px;}
-.bloco-secao__titulo{display:flex;align-items:center;gap:9px;font-family:var(--mono);font-size:11.5px;letter-spacing:0.12em;text-transform:uppercase;color:var(--azul-marinho);margin-bottom:13px;}
-.bloco-secao__titulo .ic{color:var(--dourado-escuro);}
+.bloco-secao__titulo{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11.5px;letter-spacing:0.12em;text-transform:uppercase;color:var(--azul-marinho);margin-bottom:13px;}
+.bloco-secao__titulo .ic{color:var(--dourado-escuro);width:15px;height:15px;}
 .bloco-secao__texto{font-size:14.5px;color:var(--grafite);line-height:1.65;margin-bottom:6px;}
 
 /* Resumo Executivo — leitura imediata, destaque editorial */
@@ -571,6 +573,63 @@ p{margin:0;}
 
 /* --- Campo-linha (2 colunas no form de lead) --- */
 .campo-linha{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+
+/* --- Dots de progresso do formulário --- */
+.form-progress-dots{display:flex;align-items:center;justify-content:center;gap:0;margin-bottom:20px;padding:4px 0;}
+.form-dot{width:10px;height:10px;border-radius:50%;background:var(--marfim-escuro);border:2px solid var(--papel-borda);transition:background .25s ease,border-color .25s ease,transform .25s ease;}
+.form-dot--ativo{background:var(--dourado);border-color:var(--dourado-escuro);transform:scale(1.2);}
+.form-dot--feito{background:var(--verde-conforme);border-color:var(--verde-conforme);}
+.form-dot-linha{flex:1;height:2px;background:var(--marfim-escuro);max-width:36px;margin:0 4px;transition:background .25s ease;}
+.form-dot-linha--feita{background:var(--verde-conforme);}
+
+/* --- Slide das etapas do formulário --- */
+.form-etapa--slide{animation:slideIn .28s cubic-bezier(.2,0,.3,1) both;}
+@keyframes slideIn{from{opacity:0;transform:translateX(18px);}to{opacity:1;transform:translateX(0);}}
+.form-etapa--saindo{animation:slideOut .2s cubic-bezier(.4,0,1,1) both;}
+@keyframes slideOut{from{opacity:1;transform:translateX(0);}to{opacity:0;transform:translateX(-18px);}}
+.btn-ouro--full{width:100%;margin-top:8px;justify-content:center;}
+
+/* --- Botão flutuante CTA --- */
+.cta-flutuante{
+  position:fixed;bottom:0;left:0;right:0;
+  background:linear-gradient(180deg,transparent 0%,rgba(11,27,51,0.92) 28%);
+  padding:22px 20px 20px;
+  z-index:100;
+  display:none;
+  pointer-events:none;
+}
+.cta-flutuante.visivel{display:block;}
+.cta-flutuante__btn{
+  display:flex;align-items:center;justify-content:center;gap:9px;
+  width:100%;max-width:420px;margin:0 auto;
+  background:linear-gradient(180deg,var(--dourado-claro),var(--dourado));
+  color:var(--azul-marinho);border:none;
+  font-weight:700;font-size:15px;padding:16px 24px;
+  border-radius:var(--radius-doc);
+  box-shadow:0 10px 30px -8px rgba(156,123,48,0.75),0 4px 16px rgba(0,0,0,0.35);
+  pointer-events:all;cursor:pointer;
+  min-height:54px;
+  -webkit-tap-highlight-color:transparent;
+}
+.cta-flutuante__btn:active{opacity:0.9;transform:scale(0.99);}
+
+/* --- Toast de notificação --- */
+.toast{
+  position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(0);
+  display:flex;align-items:center;gap:10px;
+  padding:13px 18px;border-radius:var(--radius-doc);
+  font-family:var(--sans);font-size:13.5px;font-weight:500;
+  box-shadow:0 8px 28px rgba(11,27,51,0.35);
+  z-index:999;white-space:nowrap;max-width:90vw;
+  animation:toastIn .22s cubic-bezier(.2,0,.3,1) both;
+  pointer-events:none;
+}
+.toast--erro   {background:#A6332B;color:#fff;}
+.toast--sucesso{background:var(--verde-conforme);color:#fff;}
+.toast--info   {background:var(--azul-marinho);color:var(--dourado-claro);border:1px solid var(--azul-aco);}
+.toast--saindo {animation:toastOut .2s ease both;}
+@keyframes toastIn {from{opacity:0;transform:translateX(-50%) translateY(12px);}to{opacity:1;transform:translateX(-50%) translateY(0);}}
+@keyframes toastOut{from{opacity:1;transform:translateX(-50%) translateY(0);}to{opacity:0;transform:translateX(-50%) translateY(12px);}}
 .campo select{width:100%;padding:11px 13px;border:1.5px solid var(--papel-borda);border-radius:var(--radius-doc);font-size:14.5px;background:#FCFAF4;font-family:var(--sans);appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23666B76' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 13px center;}
 .campo select:focus{background-color:#fff;border-color:var(--dourado-escuro);}
 
@@ -581,7 +640,7 @@ p{margin:0;}
 /* --- Tópicos tributários por segmento --- */
 .topicos-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:9px;margin-top:8px;}
 .topico-item{display:flex;align-items:center;gap:9px;font-size:13px;color:var(--grafite);background:#fff;border:1px solid var(--papel-borda);border-radius:var(--radius-doc);padding:9px 12px;}
-.topico-item .ic{color:var(--dourado-escuro);flex:none;}
+.topico-item .ic{color:var(--dourado-escuro);flex:none;width:15px;height:15px;}
 
 /* --- Gatilho de urgência --- */
 .bloco-urgencia{border-left:3px solid var(--laranja-alerta);border-radius:0 var(--radius-doc) var(--radius-doc) 0;padding:16px 18px;background:#fff;margin:18px 0;}
@@ -592,7 +651,7 @@ p{margin:0;}
 /* --- Bloco de valor (O que será validado) --- */
 .checklist-validacao-grade{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:10px;}
 .checklist-validacao-grade li{display:flex;align-items:flex-start;gap:9px;font-size:13.5px;color:var(--grafite);line-height:1.45;list-style:none;}
-.checklist-validacao-grade li .ic{color:var(--verde-conforme);flex:none;margin-top:2px;}
+.checklist-validacao-grade li .ic{color:var(--verde-conforme);flex:none;margin-top:2px;width:15px;height:15px;}
 
 /* --- Ancoragem de valor --- */
 .bloco-ancoragem{background:var(--azul-meianoite);border:1px solid var(--azul-aco);border-radius:var(--radius-doc);padding:20px 22px;margin-top:18px;}
@@ -678,6 +737,7 @@ p{margin:0;}
   <symbol id="ic-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
   <symbol id="ic-phone" viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11 11 0 0 0 3.4.55 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11 11 0 0 0 .55 3.4 1 1 0 0 1-.25 1Z"/></symbol>
   <symbol id="ic-leaf" viewBox="0 0 24 24"><path d="M5 19c0-7.5 5-13.5 14-14.5 0 9.5-5 14.5-14 14.5Z"/><path d="M5.5 18.5c2.2-4.2 5.3-7.3 9.5-9.3"/></symbol>
+  <symbol id="ic-download" viewBox="0 0 24 24"><path d="M12 3v11m0 0-3.5-3.5M12 14l3.5-3.5M4 17v2a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-2"/></symbol>
 </svg>
 
 <header class="timbre">
@@ -966,13 +1026,6 @@ p{margin:0;}
 
         <hr class="divisor-doc">
 
-        <!-- Etapa 8 — Ancoragem de Valor -->
-        <div class="bloco-ancoragem-valor" id="bloco-ancoragem-valor">
-          <div class="bloco-ancoragem-valor__titulo"><svg class="ic"><use href="#ic-shield"/></svg>Sobre a Análise Técnica Especializada</div>
-          <p>Uma análise tributária aprofundada exige levantamento técnico criterioso, análise documental estruturada e avaliação especializada de cada aspecto fiscal identificado.</p>
-          <p style="margin-top:10px;">O diagnóstico preliminar identifica <strong>indícios</strong>. A análise técnica <strong>valida riscos, confirma oportunidades e quantifica impactos</strong> específicos para a sua realidade — com base em documentação real e legislação aplicável.</p>
-        </div>
-
         <hr class="divisor-doc">
 
         <!-- Etapa 20 — Modo Especialista -->
@@ -982,32 +1035,45 @@ p{margin:0;}
           <div id="grid-modo-especialista"></div>
         </div>
 
-        <div class="bloco-lead">
-          <h3 class="bloco-lead__titulo">Diagnóstico Tributário Estratégico</h3>
-          <p class="bloco-lead__sub">Esta triagem identificou pontos que merecem validação documental. Preencha seus dados para registrar o protocolo e dar início ao Diagnóstico Tributário Estratégico.</p>
+        <div class="bloco-lead" id="bloco-lead">
+          <div class="form-progress-dots">
+            <span class="form-dot form-dot--ativo" data-step="1"></span>
+            <span class="form-dot-linha"></span>
+            <span class="form-dot" data-step="2"></span>
+            <span class="form-dot-linha"></span>
+            <span class="form-dot" data-step="3"></span>
+          </div>
+          <h3 class="bloco-lead__titulo">Registrar Protocolo</h3>
+          <p class="bloco-lead__sub">Preencha seus dados para receber o protocolo e iniciar o Diagnóstico Tributário Estratégico com um especialista.</p>
 
           <!-- ETAPA 1 do formulário -->
-          <div class="form-etapa" id="form-etapa-1">
-            <div class="form-etapa__titulo">Etapa 1 de 3 — Identificação</div>
+          <div class="form-etapa form-etapa--slide" id="form-etapa-1">
+            <div class="form-etapa__titulo">
+              <svg class="ic" style="width:13px;height:13px;color:var(--dourado-escuro);"><use href="#ic-clipboard"/></svg>
+              Etapa 1 de 3 — Identificação
+            </div>
             <div class="campo">
               <label for="in-nome">Nome completo</label>
-              <input type="text" id="in-nome" autocomplete="name" placeholder="Como podemos te chamar" aria-required="true" aria-describedby="erro-nome">
+              <input type="text" id="in-nome" autocomplete="name" placeholder="Como podemos te chamar" aria-required="true" aria-describedby="erro-nome" inputmode="text">
               <div class="campo__erro" id="erro-nome" role="alert" aria-live="assertive">Informe seu nome.</div>
             </div>
             <div class="campo">
               <label for="in-whatsapp">WhatsApp com DDD</label>
-              <input type="tel" id="in-whatsapp" autocomplete="tel" placeholder="(81) 99999-9999" aria-required="true" aria-describedby="erro-whatsapp" inputmode="numeric">
+              <input type="tel" id="in-whatsapp" autocomplete="tel" placeholder="(81) 99999-9999" aria-required="true" aria-describedby="erro-whatsapp" inputmode="numeric" maxlength="15">
               <div class="campo__erro" id="erro-whatsapp" role="alert" aria-live="assertive">Informe um WhatsApp válido com DDD.</div>
             </div>
-            <button class="btn-ouro" id="btn-form-etapa-1" type="button" style="width:100%;margin-top:8px;">Continuar<svg class="ic"><use href="#ic-arrow"/></svg></button>
+            <button class="btn-ouro btn-ouro--full" id="btn-form-etapa-1" type="button">Continuar<svg class="ic"><use href="#ic-arrow"/></svg></button>
           </div>
 
           <!-- ETAPA 2 do formulário -->
-          <div class="form-etapa" id="form-etapa-2" style="display:none;">
-            <div class="form-etapa__titulo">Etapa 2 de 3 — Localização</div>
+          <div class="form-etapa form-etapa--slide" id="form-etapa-2" style="display:none;">
+            <div class="form-etapa__titulo">
+              <svg class="ic" style="width:13px;height:13px;color:var(--dourado-escuro);"><use href="#ic-map"/></svg>
+              Etapa 2 de 3 — Localização
+            </div>
             <div class="campo">
               <label for="in-email">E-mail (opcional)</label>
-              <input type="email" id="in-email" autocomplete="email" placeholder="seu@email.com">
+              <input type="email" id="in-email" autocomplete="email" placeholder="seu@email.com" inputmode="email">
             </div>
             <div class="campo-linha">
               <div class="campo">
@@ -1035,8 +1101,11 @@ p{margin:0;}
           </div>
 
           <!-- ETAPA 3 do formulário -->
-          <div class="form-etapa" id="form-etapa-3" style="display:none;">
-            <div class="form-etapa__titulo">Etapa 3 de 3 — Consentimentos</div>
+          <div class="form-etapa form-etapa--slide" id="form-etapa-3" style="display:none;">
+            <div class="form-etapa__titulo">
+              <svg class="ic" style="width:13px;height:13px;color:var(--dourado-escuro);"><use href="#ic-lock"/></svg>
+              Etapa 3 de 3 — Consentimentos
+            </div>
             <label class="consentimento">
               <input type="checkbox" id="chk-consentimento-dados">
               <span>Autorizo o uso dos dados informados nesta triagem para a realização do Diagnóstico Tributário Estratégico e para o contato de um especialista, conforme a Lei Geral de Proteção de Dados (Lei nº 13.709/2018).</span>
@@ -1073,10 +1142,14 @@ p{margin:0;}
           </div>
         </div><!-- /bloco-lead -->
 
-        <div class="aviso-legal aviso-legal--claro">
-          <div class="aviso-legal__titulo"><svg class="ic"><use href="#ic-info"/></svg>Aviso Importante</div>
-          <p>Esta triagem possui caráter exclusivamente informativo e preliminar. Não substitui parecer tributário, contábil ou jurídico. As conclusões apresentadas são baseadas exclusivamente nas informações fornecidas pelo usuário. A confirmação de riscos e oportunidades depende de análise documental específica.</p>
+        <!-- Botão flutuante de ancoragem ao formulário -->
+        <div class="cta-flutuante" id="cta-flutuante" aria-live="polite">
+          <button class="cta-flutuante__btn" id="btn-ir-form" type="button">
+            <svg class="ic" style="width:16px;height:16px;color:var(--azul-marinho);"><use href="#ic-send"/></svg>
+            Registrar protocolo
+          </button>
         </div>
+
         <a class="link-reiniciar" id="link-reiniciar" href="#">Refazer a triagem</a>
 
         <!-- Etapa 16 — Botão PDF Premium -->
@@ -1096,7 +1169,8 @@ p{margin:0;}
   <div class="rodape-site__conteudo">
     <div class="aviso-legal">
       <div class="aviso-legal__titulo"><svg class="ic"><use href="#ic-info"/></svg>Aviso Importante</div>
-      <p>Esta triagem possui caráter exclusivamente informativo e preliminar. Não substitui parecer tributário, contábil ou jurídico. As conclusões apresentadas são baseadas exclusivamente nas informações fornecidas pelo usuário. A confirmação de riscos e oportunidades depende de análise documental específica.</p>
+      <p>Este diagnóstico é preliminar e foi elaborado com base nas informações fornecidas por você. Seu objetivo é identificar possíveis riscos fiscais e oportunidades tributárias.</p>
+      <p style="margin-top:8px;">Os resultados possuem caráter informativo e não substituem parecer técnico, contábil ou jurídico. A confirmação das conclusões depende da análise da documentação aplicável ao seu caso.</p>
     </div>
     <p class="rodape-site__copy">Renato Saraiva — Consultor Tributário Sênior · (81) 99504-1947</p>
   </div>
@@ -1664,6 +1738,10 @@ function concluirQuestionario(){
   setTimeout(function(){
     montarResultado();
     trocarTela(elTelaResultado);
+    /* Exibe CTA flutuante após pequeno delay para o resultado estar visível */
+    setTimeout(function(){
+      if(typeof exibirCtaFlutuante === "function") exibirCtaFlutuante();
+    }, 800);
   }, 1300);
 }
 
@@ -2576,9 +2654,27 @@ function montarResultado(){
 }
 
 /* =========================================================
+   TOAST — notificação leve de feedback ao usuário
+   ========================================================= */
+function toast(mensagem, tipo){
+  tipo = tipo || "info";
+  var el = document.createElement("div");
+  el.className = "toast toast--" + tipo;
+  el.textContent = mensagem;
+  document.body.appendChild(el);
+  var timer = setTimeout(function(){
+    el.classList.add("toast--saindo");
+    setTimeout(function(){ if(el.parentNode) el.parentNode.removeChild(el); }, 220);
+  }, 3500);
+  el.addEventListener("click", function(){
+    clearTimeout(timer);
+    el.classList.add("toast--saindo");
+    setTimeout(function(){ if(el.parentNode) el.parentNode.removeChild(el); }, 220);
+  });
+}
+
+/* =========================================================
    ETAPA 16 — GERADOR DE PDF PREMIUM
-   Estratégia: página de impressão dedicada com CSS @print
-   Abre nova janela com relatório formatado → usuário imprime/salva PDF
    ========================================================= */
 function gerarPDFPremium(){
   if(!resultadoAtual || !resultadoAtual.paineis) return;
@@ -2810,40 +2906,131 @@ const chkDados = document.getElementById("chk-consentimento-dados");
 const chkContato = document.getElementById("chk-consentimento-contato");
 const btnWhatsapp = document.getElementById("btn-whatsapp");
 
-/* Etapa 9 — navegação entre etapas do formulário */
+/* Etapa 9 — navegação entre etapas do formulário (aprimorada para mobile) */
 const formEtapa1 = document.getElementById("form-etapa-1");
 const formEtapa2 = document.getElementById("form-etapa-2");
 const formEtapa3 = document.getElementById("form-etapa-3");
+const ctaFlutuante = document.getElementById("cta-flutuante");
+const btnIrForm   = document.getElementById("btn-ir-form");
 
+/* --- Progress dots helpers --- */
+function atualizarDots(etapaAtiva){
+  var dots = document.querySelectorAll(".form-dot");
+  var linhas = document.querySelectorAll(".form-dot-linha");
+  dots.forEach(function(dot, i){
+    var step = i + 1;
+    dot.classList.remove("form-dot--ativo","form-dot--feito");
+    if(step < etapaAtiva) dot.classList.add("form-dot--feito");
+    else if(step === etapaAtiva) dot.classList.add("form-dot--ativo");
+  });
+  linhas.forEach(function(linha, i){
+    linha.classList.toggle("form-dot-linha--feita", etapaAtiva > i + 1);
+  });
+}
+
+/* --- Slide entre etapas --- */
+function mostrarEtapa(mostrar, esconder){
+  if(esconder){
+    esconder.classList.add("form-etapa--saindo");
+    setTimeout(function(){ esconder.style.display="none"; esconder.classList.remove("form-etapa--saindo"); }, 200);
+  }
+  setTimeout(function(){
+    mostrar.style.display = "block";
+    mostrar.classList.add("form-etapa--slide");
+    setTimeout(function(){ mostrar.classList.remove("form-etapa--slide"); }, 300);
+    /* foca primeiro campo da etapa */
+    var primeiroInput = mostrar.querySelector("input,select");
+    if(primeiroInput) setTimeout(function(){ primeiroInput.focus(); }, 320);
+  }, esconder ? 210 : 0);
+}
+
+/* --- Botão flutuante --- */
+function exibirCtaFlutuante(){
+  if(ctaFlutuante) ctaFlutuante.classList.add("visivel");
+}
+function ocultarCtaFlutuante(){
+  if(ctaFlutuante) ctaFlutuante.classList.remove("visivel");
+}
+if(btnIrForm){
+  btnIrForm.addEventListener("click", function(){
+    var lead = document.getElementById("bloco-lead");
+    if(lead){ lead.scrollIntoView({behavior:"smooth",block:"start"}); }
+    ocultarCtaFlutuante();
+    /* Foca no primeiro campo visível */
+    setTimeout(function(){
+      var primeiro = formEtapa1.style.display !== "none" ? formEtapa1.querySelector("input") :
+                     formEtapa2.style.display !== "none" ? formEtapa2.querySelector("input") :
+                     formEtapa3.querySelector("input");
+      if(primeiro) primeiro.focus();
+    }, 400);
+  });
+}
+
+/* --- Visibilidade do CTA flutuante via Intersection Observer --- */
+(function(){
+  var lead = document.getElementById("bloco-lead");
+  if(!lead || !window.IntersectionObserver) return;
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ ocultarCtaFlutuante(); }
+      else {
+        /* só mostra se a tela de resultado estiver ativa e form não concluído */
+        if(document.getElementById("tela-resultado").classList.contains("ativa") && btnWhatsapp && btnWhatsapp.disabled !== false){
+          exibirCtaFlutuante();
+        }
+      }
+    });
+  }, {threshold:0.1});
+  obs.observe(lead);
+})();
+
+/* --- Avançar etapa 1 --- */
 document.getElementById("btn-form-etapa-1").addEventListener("click", function(){
-  const erroNome = document.getElementById("erro-nome");
-  const erroWhats = document.getElementById("erro-whatsapp");
-  let ok = true;
+  var erroNome = document.getElementById("erro-nome");
+  var erroWhats = document.getElementById("erro-whatsapp");
+  var ok = true;
   if(!inNome.value.trim()){ erroNome.classList.add("visivel"); ok = false; } else erroNome.classList.remove("visivel");
   if(!whatsappValido(inWhatsapp.value)){ erroWhats.classList.add("visivel"); ok = false; } else erroWhats.classList.remove("visivel");
   if(!ok) return;
-  // salvamento progressivo — guarda etapa 1
   try{ sessionStorage.setItem("dte_nome", inNome.value.trim()); sessionStorage.setItem("dte_whats", inWhatsapp.value.trim()); }catch(e){}
-  formEtapa1.style.display = "none";
-  formEtapa2.style.display = "block";
+  atualizarDots(2);
+  mostrarEtapa(formEtapa2, formEtapa1);
 });
 
+/* --- Avançar etapa 2 --- */
 document.getElementById("btn-form-etapa-2").addEventListener("click", function(){
-  // salvamento progressivo — guarda etapa 2
   try{ sessionStorage.setItem("dte_municipio", inMunicipio.value.trim()); sessionStorage.setItem("dte_estado", inEstado.value); }catch(e){}
-  formEtapa2.style.display = "none";
-  formEtapa3.style.display = "block";
+  atualizarDots(3);
+  mostrarEtapa(formEtapa3, formEtapa2);
 });
 
+/* --- Voltar para etapa 1 --- */
 document.getElementById("btn-form-voltar-1").addEventListener("click", function(){
-  formEtapa2.style.display = "none";
-  formEtapa1.style.display = "block";
+  atualizarDots(1);
+  mostrarEtapa(formEtapa1, formEtapa2);
 });
 
+/* --- Voltar para etapa 2 --- */
 document.getElementById("btn-form-voltar-2").addEventListener("click", function(){
-  formEtapa3.style.display = "none";
-  formEtapa2.style.display = "block";
+  atualizarDots(2);
+  mostrarEtapa(formEtapa2, formEtapa3);
 });
+
+/* --- Enter para avançar entre etapas --- */
+[inNome, inWhatsapp].forEach(function(el){
+  if(!el) return;
+  el.addEventListener("keydown", function(e){
+    if(e.key === "Enter"){ e.preventDefault(); document.getElementById("btn-form-etapa-1").click(); }
+  });
+});
+if(inEmail || inMunicipio){
+  [inEmail, inMunicipio].forEach(function(el){
+    if(!el) return;
+    el.addEventListener("keydown", function(e){
+      if(e.key === "Enter"){ e.preventDefault(); document.getElementById("btn-form-etapa-2").click(); }
+    });
+  });
+}
 
 /* =========================================================
    MÁSCARA WHATSAPP — (99) 99999-9999
@@ -3040,6 +3227,7 @@ btnWhatsapp.addEventListener("click", function(){
 
   const url = "https://wa.me/" + WHATSAPP_NUMERO + "?text=" + encodeURIComponent(mensagem);
   window.open(url, "_blank");
+  if(typeof ocultarCtaFlutuante === "function") ocultarCtaFlutuante();
 });
 
 /* =========================================================
@@ -3065,6 +3253,12 @@ document.getElementById("link-reiniciar").addEventListener("click", function(e){
   inMunicipio.value = ""; inEstado.value = "";
   chkDados.checked = false; chkContato.checked = false;
   btnWhatsapp.disabled = true;
+  /* Reseta form para etapa 1 e dots */
+  formEtapa1.style.display = "block";
+  formEtapa2.style.display = "none";
+  formEtapa3.style.display = "none";
+  if(typeof atualizarDots === "function") atualizarDots(1);
+  if(typeof ocultarCtaFlutuante === "function") ocultarCtaFlutuante();
   var elBlocoTopicos = document.getElementById("bloco-topicos-segmento");
   if(elBlocoTopicos) elBlocoTopicos.style.display = "none";
   trocarTela(elTelaCapa);
